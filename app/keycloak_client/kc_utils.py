@@ -29,7 +29,7 @@ def init_kc_admin():
             server_url=KEYCLOAK_SERVER,
             username=KEYCLOAK_USERNAME,
             password=KEYCLOAK_PASSWORD,
-            realm_name='master',
+            realm_name=KEYCLOAK_REALM,
             verify=True,
             auto_refresh_token=['get', 'put', 'post', 'delete']
         )
